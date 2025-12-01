@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi panel | MythCraft Studio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+</head>
+<body>
+
+<header class="mc-header">
+  <div class="mc-logo">
+    <span class="mc-logo-mark">M</span>
+    <span class="mc-logo-text">MythCraft Studio</span>
+  </div>
+
+  <nav class="mc-nav">
+    <a href="../index.html">Inicio</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="personalizados.html">Personalizados</a>
+    <a href="packs.html">Packs</a>
+    <a href="gratis.html">Gratis</a>
+    <a href="contacto.html">Contacto</a>
+    <button class="mc-btn mc-btn-ghost mc-dashboard-logout" id="logout-btn">
+      Cerrar sesión
+    </button>
+  </nav>
+
+  <button class="mc-menu-toggle" aria-label="Abrir menú">
+    <span></span><span></span><span></span>
+  </button>
+
+  <div class="mc-nav-overlay">
+    <nav class="mc-nav-mobile">
+      <a href="../index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="personalizados.html">Personalizados</a>
+      <a href="packs.html">Packs</a>
+      <a href="gratis.html">Gratis</a>
+      <a href="contacto.html">Contacto</a>
+      <button class="mc-btn mc-btn-ghost mc-dashboard-logout" id="logout-btn-mobile">
+        Cerrar sesión
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main class="mc-dashboard">
+  <section class="mc-dashboard-header" data-aos="fade-up">
+    <h1>Hola, <span id="user-name">usuario</span></h1>
+    <p>Bienvenido a tu espacio. Aquí verás tus compras, historias y packs.</p>
+  </section>
+
+  <section class="mc-dashboard-grid" data-aos="fade-up">
+    <article class="mc-card mc-card-soft fx-liquid">
+      <h2>Mis historias</h2>
+      <p>Aquí aparecerán las historias que has comprado o encargado.</p>
+      <ul class="mc-dash-list" id="stories-list">
+        <li class="mc-dash-empty">Todavía no tienes historias registradas.</li>
+      </ul>
+    </article>
+
+    <article class="mc-card mc-card-soft fx-liquid">
+      <h2>Mis packs visuales</h2>
+      <p>Descarga de nuevo tus packs de imágenes y mini historias.</p>
+      <ul class="mc-dash-list" id="packs-list">
+        <li class="mc-dash-empty">Todavía no tienes packs registrados.</li>
+      </ul>
+    </article>
+
+    <article class="mc-card mc-card-soft fx-liquid">
+      <h2>Mi perfil</h2>
+      <p>Información básica de tu cuenta.</p>
+      <div class="mc-profile-box">
+        <p><strong>Nombre:</strong> <span id="profile-name">—</span></p>
+        <p><strong>Correo:</strong> <span id="profile-email">—</span></p>
+      </div>
+    </article>
+  </section>
+</main>
+
+<footer class="mc-footer">
+  © <span id="year"></span> MythCraft Studio.
+</footer>
+
+<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -462,3 +462,145 @@ a {
     padding-inline: 5%;
   }
 }
+/* AUTH PAGES */
+
+.mc-auth-wrapper {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 6%;
+}
+
+.mc-auth-card {
+  width: 100%;
+  max-width: 420px;
+  background: radial-gradient(circle at top left, #261738, #15111f 60%, #0e0e14 100%);
+  border-radius: 20px;
+  border: 1px solid rgba(58, 46, 75, 0.9);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7);
+  padding: 26px 22px 28px;
+}
+
+.mc-auth-card h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.mc-auth-sub {
+  font-size: 13px;
+  color: #c9c0e8;
+  margin-bottom: 20px;
+}
+
+.mc-auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.mc-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.mc-input-group label {
+  font-size: 13px;
+  color: #e3d4ff;
+}
+
+.mc-input {
+  padding: 9px 11px;
+  border-radius: 9px;
+  border: 1px solid rgba(227, 212, 255, 0.3);
+  background: rgba(5, 5, 9, 0.9);
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.mc-input::placeholder {
+  color: #8e85b5;
+}
+
+.mc-input:focus {
+  border-color: var(--mc-primary-bright);
+  box-shadow: 0 0 0 1px rgba(168, 91, 253, 0.5);
+  background: #070712;
+}
+
+.mc-btn-full {
+  width: 100%;
+  justify-content: center;
+  margin-top: 6px;
+}
+
+.mc-auth-link {
+  font-size: 13px;
+  margin-top: 10px;
+  text-align: center;
+  color: #c9c0e8;
+}
+
+.mc-auth-link a {
+  color: var(--mc-primary-bright);
+  text-decoration: none;
+}
+
+/* DASHBOARD */
+
+.mc-dashboard {
+  padding: 40px 6% 60px;
+  min-height: calc(100vh - 120px);
+}
+
+.mc-dashboard-header h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.mc-dashboard-header p {
+  font-size: 14px;
+  color: #c9c0e8;
+}
+
+.mc-dashboard-grid {
+  margin-top: 24px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.mc-dash-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  color: #d2c8f5;
+}
+
+.mc-dash-empty {
+  color: #8e85b5;
+  font-style: italic;
+}
+
+.mc-profile-box {
+  font-size: 13px;
+  color: #d2c8f5;
+  margin-top: 8px;
+}
+
+.mc-dashboard-logout {
+  font-size: 13px;
+  padding: 6px 12px;
+}
+
+/* BOTÓN LOGOUT EN MÓVIL (DENTRO DE NAV MOBILE) */
+.mc-nav-mobile .mc-dashboard-logout {
+  margin-top: 12px;
+}
